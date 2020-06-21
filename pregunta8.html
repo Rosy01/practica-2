@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nro1
+    <input type="number" id="nro1"></input> </br>
+    
+    <button onclick="divisible() ">Calcular</button>
+
+    <p id = "resultado"></p>
+
+    <script>
+        function divisible(){
+            var nro1 = document.getElementById("nro1").value;
+            if(nro1 % 2 === 0){
+                    document.getElementById("resultado").innerHTML= nro1  + " es divisible por 2"; 
+                }
+                else {  
+                    document.getElementById("resultado").innerHTML= nro1  + "  no es divisible por 2";                  
+                }
+        }
+
+    </script>
+</body>
+</html>

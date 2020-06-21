@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Nro1
+    <input type="number" id="nro1"></input> </br>
+    Nro2
+    <input type="number" id="nro2"></input> </br>
+    Nro3
+    <input type="number" id="nro3"></input> </br>
+
+    <button onclick="mayor() ">Calcular</button>
+
+    <p id = "resultado"></p>
+
+    <script>
+        function mayor(){
+            var nro1 = document.getElementById("nro1").value;
+            var nro2 = document.getElementById("nro2").value;
+            var nro3 = document.getElementById("nro3").value;
+
+            if(nro1 > nro2 && nro1>nro3){
+                    document.getElementById("resultado").innerHTML= "El numero " + nro1  + " es mayor"; 
+                }
+                else if(nro2>nro3){
+                    document.getElementById("resultado").innerHTML= "El numero " + nro2  + " es mayor";
+                }
+                else {
+                document.getElementById("resultado").innerHTML= "El numero " + nro3  + " es mayor";
+                } 
+            if(nro1==nro2 && nro2==nro3){
+                document.getElementById("resultado").innerHTML= "son iguales";
+            }           
+        }
+    </script>
+</body>
+</html>
